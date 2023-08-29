@@ -118,7 +118,7 @@ header {
   position: absolute;
   top: 20%;
   left: 50%;
-  margin-left: -105px;
+  margin: -10px 0px 0px -105px;
 }
 
 .firstview_copy h1 {
@@ -158,4 +158,19 @@ header {
   font-size: 13px;
   font-weight: 500;
   letter-spacing: -3px;
+}
+
+
+
+/*about*/
+#about {
+  width: 100%;
+}
+
+.scroll_line span{
+  width: 1px;
+  height: 45px;
+  background-color: rgba(90,70,32,1);
+  display: block;
+  margin: 0 auto;
 }
