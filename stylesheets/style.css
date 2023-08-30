@@ -15,20 +15,13 @@ body {
   font-family: Oswald,sans-serif
 }
 
-ul {
+ul, h1, p {
   list-style: none;
   margin-block-start: 0em;
   margin-block-end: 0em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 0px;
-}
-
-p {
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
 
 a {
@@ -106,11 +99,25 @@ header {
 }
 
 
+.contents {
+  position: relative;
+  width: 100%;
+  z-index: 100;
+}
+
+.contents_section_inner {
+  padding: 60px 0px;
+}
+
+.contents_block {
+  width: 100%;
+}
 
 
 /*firsview*/
 #firstview {
-  height: 100%;
+  height: 800px;
+  position: relative;
 }
 
 .firstview_copy {
@@ -118,13 +125,13 @@ header {
   position: absolute;
   top: 20%;
   left: 50%;
-  margin: -10px 0px 0px -105px;
+  margin: -23px 0px 0px -105px;
 }
 
 .firstview_copy h1 {
   font-size: 30px;
   font-weight:500;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.2px;
   line-height: 70px;
   writing-mode: vertical-rl;
 }
@@ -162,15 +169,83 @@ header {
 
 
 
+
+
 /*about*/
 #about {
   width: 100%;
+  text-align: center;
 }
 
+
+.scroll {
+  margin-bottom: 105px;
+}
 .scroll_line span{
   width: 1px;
   height: 45px;
   background-color: rgba(90,70,32,1);
   display: block;
   margin: 0 auto;
+}
+
+
+
+.about_ttl p {
+  font-size: 30px;
+  line-height: 60px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.about_txt p {
+  font-size: 18px;
+  line-height: 48px;
+  font-weight: 100;
+}
+
+
+
+/*recommend*/
+.recommend_ttl {
+  text-align: center;
+  font-size: 24px;
+  line-height: 48px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.recommend_list {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  padding: 100px;
+}
+
+.recommend_txt h3 {
+  font-size: 22px;
+  line-height: 48px;
+  font-weight: 300;
+}
+.recommend_txt p {
+  font-size: 18px;
+  line-height: 42px;
+  font-weight: 100;
+  padding: 10px 0px;
+}
+
+.recommend_img img{
+  max-width: 300px;
+  margin-left: 80px;
+}
+
+.link_more {
+  color: rgba(90,70,32,1);
+  display: flex;
+  align-items: center;
+}
+.link_more span {
+  height: 1px;
+  width: 45px;
+  background-color: rgba(90,70,32,1);
+  margin-left: 10px;
 }
