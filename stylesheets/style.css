@@ -177,7 +177,6 @@ header {
   text-align: center;
 }
 
-
 .scroll {
   margin-bottom: 105px;
 }
@@ -188,8 +187,6 @@ header {
   display: block;
   margin: 0 auto;
 }
-
-
 
 .about_ttl p {
   font-size: 30px;
@@ -207,6 +204,11 @@ header {
 
 
 /*recommend*/
+#recommend .contents_section_inner {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
 .recommend_ttl {
   text-align: center;
   font-size: 24px;
@@ -216,9 +218,17 @@ header {
 }
 .recommend_list {
   display: flex;
-  flex-direction: row-reverse;
   justify-content: center;
-  padding: 100px;
+  align-items: center;
+  margin-top: 180px;
+}
+
+.recommend_img, .recommend_txt {
+  width: 50%;
+}
+
+.recommend_txt div {
+  text-align: left;
 }
 
 .recommend_txt h3 {
@@ -226,6 +236,7 @@ header {
   line-height: 48px;
   font-weight: 300;
 }
+
 .recommend_txt p {
   font-size: 18px;
   line-height: 42px;
@@ -233,9 +244,13 @@ header {
   padding: 10px 0px;
 }
 
+.recommend_txt {
+  margin: 0 auto;
+}
+
 .recommend_img img{
   max-width: 300px;
-  margin-left: 80px;
+  margin: 0 auto;
 }
 
 .link_more {
@@ -248,4 +263,24 @@ header {
   width: 45px;
   background-color: rgba(90,70,32,1);
   margin-left: 10px;
+}
+
+.recommend_list:nth-child(1) {
+  margin-top: 100px;
+}
+.recommend_list:nth-child(2) img{
+  width: 150px;
+  padding: 30px 0px;
+}
+.recommend_list:nth-child(3) img{
+  width: 200px;
+  padding-bottom: 20px;
+}
+.recommend_list:nth-child(4) img{
+  width: 200px;
+  padding-bottom: 60px;
+}
+
+.recommend_list:nth-child(odd) {
+  flex-direction: row-reverse;
 }
