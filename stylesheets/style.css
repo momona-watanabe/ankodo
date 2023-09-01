@@ -177,6 +177,7 @@ header {
   text-align: center;
 }
 
+
 .scroll {
   margin-bottom: 105px;
 }
@@ -187,6 +188,8 @@ header {
   display: block;
   margin: 0 auto;
 }
+
+
 
 .about_ttl p {
   font-size: 30px;
@@ -223,20 +226,19 @@ header {
   margin-top: 180px;
 }
 
+
 .recommend_img, .recommend_txt {
   width: 50%;
 }
-
 .recommend_txt div {
   text-align: left;
 }
 
 .recommend_txt h3 {
-  font-size: 22px;
+  font-size: 24px;
   line-height: 48px;
-  font-weight: 300;
+  font-weight: 400;
 }
-
 .recommend_txt p {
   font-size: 18px;
   line-height: 42px;
@@ -246,6 +248,8 @@ header {
 
 .recommend_txt {
   margin: 0 auto;
+  text-align: center;
+  width: auto;
 }
 
 .recommend_img img{
@@ -268,19 +272,31 @@ header {
 .recommend_list:nth-child(1) {
   margin-top: 100px;
 }
+
 .recommend_list:nth-child(2) img{
   width: 150px;
-  padding: 30px 0px;
 }
+.recommend_list:nth-child(2) .recommend_img div>img:nth-child(2) {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .recommend_list:nth-child(3) img{
   width: 200px;
-  padding-bottom: 20px;
 }
+.recommend_list:nth-child(3) .recommend_img div>img:nth-child(1) {
+  margin-bottom: 30px;
+}
+
 .recommend_list:nth-child(4) img{
   width: 200px;
-  padding-bottom: 60px;
+}
+.recommend_list:nth-child(4) .recommend_img div>img:nth-child(1) {
+  margin-bottom: 60px;
+  margin-left: 80px;
 }
 
 .recommend_list:nth-child(odd) {
   flex-direction: row-reverse;
 }
+
