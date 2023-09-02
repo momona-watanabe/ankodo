@@ -26,6 +26,7 @@ ul, h1, p {
 
 a {
   text-decoration: none;
+  color: rgba(90,70,32,1);
 }
 
 .wrapper {
@@ -33,6 +34,13 @@ a {
   margin: 0 auto;
 }
 
+.contents_ttl {
+  text-align: center;
+  font-size: 24px;
+  line-height: 48px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
 
 
 
@@ -94,7 +102,6 @@ header {
   line-height: 20px;
   font-weight: 400;
   letter-spacing: 0.3px;
-  color: rgba(90,70,32,1);
   writing-mode: vertical-rl;
 }
 
@@ -177,9 +184,8 @@ header {
   text-align: center;
 }
 
-
 .scroll {
-  margin-bottom: 105px;
+  margin-bottom: 110px;
 }
 .scroll_line span{
   width: 1px;
@@ -188,8 +194,6 @@ header {
   display: block;
   margin: 0 auto;
 }
-
-
 
 .about_ttl p {
   font-size: 30px;
@@ -212,20 +216,12 @@ header {
   margin: 0 auto;
 }
 
-.recommend_ttl {
-  text-align: center;
-  font-size: 24px;
-  line-height: 48px;
-  font-weight: 400;
-  margin-bottom: 50px;
-}
 .recommend_list {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 180px;
 }
-
 
 .recommend_img, .recommend_txt {
   width: 50%;
@@ -258,7 +254,6 @@ header {
 }
 
 .link_more {
-  color: rgba(90,70,32,1);
   display: flex;
   align-items: center;
 }
@@ -298,5 +293,79 @@ header {
 
 .recommend_list:nth-child(odd) {
   flex-direction: row-reverse;
+}
+
+
+
+/*other*/
+.other_img {
+  height: 80px;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+
+.other_img_area1 {
+  height: 90px;
+  margin-top: 5px;
+}
+.other_img_area2 {
+  height: 70px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.other_list {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.other_list li {
+  margin: 0 25px;
+}
+
+.other_txt {
+  text-align: center;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+
+
+
+
+/*information*/
+
+.info_list {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.info_list li {
+  margin: 0 40px;
+  width: 250px;
+}
+
+.info_img {
+  width: 210px;
+  margin: 0 auto 30px;
+  position: relative;
+}
+
+.info_txt p:nth-child(1) {
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.info_txt p:nth-child(2) {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+
+.info_img img {
+  border-radius: 50%;
 }
 
