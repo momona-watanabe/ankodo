@@ -212,8 +212,6 @@ header {
 
 
 
-
-
 /*about*/
 #about {
   width: 100%;
@@ -241,6 +239,7 @@ header {
   margin: 0 auto;
 }
 
+
 .recommend_list {
   display: flex;
   justify-content: center;
@@ -248,10 +247,10 @@ header {
   margin-top: 180px;
 }
 
+
 .recommend_img, .recommend_txt {
   width: 50%;
 }
-
 .recommend_txt div {
   text-align: left;
 }
@@ -319,6 +318,7 @@ header {
   height: 80px;
   margin-bottom: 30px;
   margin-top: 15px;
+  object-fit: contain;
 }
 
 .other_img_area1 {
@@ -381,52 +381,12 @@ header {
   font-weight: 400;
 }
 
-
-
 .info_img img {
   border-radius: 50%;
 }
-/*
-
-.scloll_img_circle {
-  border-radius: 50%;
-
-}
-
-.info_img div, .info_img div span{
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  width: 100%;
-}
-
-.info_list:nth-child(1)>div>span>span {
-  background-image: url(../imges/info_img.jpg);
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  width: 100%;
-  display: block;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.scloll_img_circle {
-  display: block;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-*/
 
 
-
-
+/*news*/
 .news_list {
   display: flex;
   justify-content: center;
@@ -443,7 +403,7 @@ header {
 }
 .news_txt p:nth-child(1) {
   font-size: 14px;
-  margin: 20px 0;
+  margin: 30px 0 20px 0;
 }
 .news_ttl,.news_txt p:nth-child(1) {
   text-align: center;
@@ -451,6 +411,12 @@ header {
   letter-spacing: 0.6px;
   font-weight: 400;
 }
+
+.news_txt p:nth-child(2) {
+  font-size: 16px;
+  line-height: 32px;
+}
+
 #news {
   padding-bottom: 80px;
 }
@@ -585,3 +551,74 @@ footer {
   letter-spacing: 0.8px;
 }
 
+
+
+
+
+
+
+
+
+
+
+/* レスポンシブ 
+----------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 999px) {
+
+.contents_section {
+  padding: 60px;
+}
+  
+
+.other_list {
+  flex-wrap: wrap;
+}
+
+.other_list li {
+  width: calc(100% / 3);
+}
+
+.other_img {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.other_list li {
+  margin: 40px 0 0;
+}
+
+.other_list li:nth-child(2) {
+  margin-top:30px;
+}
+
+
+.info_list {
+  display: block;
+  text-align: center;
+}
+.info_list li {
+  margin: 60px 0 0;
+  width: 100%;
+}
+
+
+#news {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.news_list {
+  flex-wrap: wrap;
+}
+
+.news_list li {
+  width: calc(50% - 60px);
+  margin: 30px 30px 0;
+}
+
+
+
+
+}/*max-width:999px*/
