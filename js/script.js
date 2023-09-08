@@ -2,6 +2,7 @@
 
 
 //loadingアニメーション
+//フェードアウトした後に動かしたいJSをまとめる
 $(window).on('load',function(){
   $("#loading").delay(1500).fadeOut('slow',function(){
     $('body').addClass('appear'); //フェードアウト後bodyにappearクラス付与
