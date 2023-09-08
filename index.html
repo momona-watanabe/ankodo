@@ -14,7 +14,17 @@
   <div class="wrapper">
 
 
-        <!--HEADER-->
+    <!--LOADING-->
+    <div id="loading">
+      <div class="load_inner">
+          <div class="load_logo"><img src="../ankodo/imges/logo_b.png" alt=""></div>
+      </div>
+    </div>
+
+
+  <div class="wrap_inner">
+
+    <!--HEADER-->
     <header>
       <div class="header_inner">
         <div class="header_left">
@@ -145,13 +155,13 @@
       <section id="about" class="contents_section">
         <div class="contents_section_inner">
           <div class="contents_block">
-            <div class="scroll">
+            <div class="scroll inview_re fadeIn">
               <div class="scroll_line">
                 <span></span>
               </div>
             </div><!--scroll-->
 
-            <div class="about_ttl">
+            <div class="about_ttl inview_re fadeIn">
               <h2>
                 <p>
                   創業明治二十年
@@ -161,7 +171,7 @@
               </h2>
             </div><!--about_ttl-->
 
-            <div class="about_txt">
+            <div class="about_txt inview_re fadeIn">
               <p>
                 京都府左京区にある創業明治20年の和菓子店です。
                 <br>
@@ -182,18 +192,18 @@
       <!--RECOMMEND-->
       <section id="recommend" class="contents_section">
         <div class="contents_section_inner">
-          <div class="scroll">
+          <div class="scroll inview_re fadeIn">
             <div class="scroll_line">
               <span></span>
             </div>
           </div><!--scroll-->
 
-          <h2 class="recommend_ttl contents_ttl">
+          <h2 class="recommend_ttl contents_ttl inview_re fadeIn">
             じまんのお菓子
           </h2>
 
           <div class="contents_block">
-            <div class="recommend_list">
+            <div class="recommend_list inview_re fadeIn">
               <div class="recommend_img">
                 <img src="../ankodo/imges/home_img1.png" alt="">
               </div><!--recommend_img-->
@@ -215,11 +225,11 @@
               </div><!--recommend_txt-->
             </div><!--recommend_list-->
 
-            <div class="recommend_list">
+            <div class="recommend_list inview_re fadeIn">
               <div class="recommend_img">
                 <div>
-                  <img src="../ankodo/imges/home_img2.png" alt="">
                   <img src="../ankodo/imges/home_img3.png" alt="">
+                  <img src="../ankodo/imges/home_img2.png" alt="">
                   <img src="../ankodo/imges/home_img4.png" alt="">
                 </div>
               </div><!--recommend_img-->
@@ -241,7 +251,7 @@
               </div><!--recommend_txt-->
             </div><!--recommend_list-->
 
-            <div class="recommend_list">
+            <div class="recommend_list inview_re fadeIn">
               <div class="recommend_img">
                 <div>
                   <img src="../ankodo/imges/home_img5.png" alt="">
@@ -266,7 +276,7 @@
               </div><!--recommend_txt-->
             </div><!--recommend_list-->
 
-            <div class="recommend_list">
+            <div class="recommend_list inview_re fadeIn">
               <div class="recommend_img">
                 <div>
                   <img src="../ankodo/imges/home_img7.png" alt="">
@@ -291,7 +301,7 @@
               </div><!--recommend_txt-->
             </div><!--recommend_list-->
 
-            <div class="recommend_list">
+            <div class="recommend_list inview_re fadeIn">
               <div class="recommend_img">
                 <div>
                   <img src="../ankodo/imges/home_img9.png" alt="">
@@ -323,18 +333,18 @@
       <!--OTHER-->
       <section id="other" class="contents_section">
         <div class="contents_section_inner">
-          <div class="scroll">
+          <div class="scroll inview_re fadeIn">
             <div class="scroll_line">
               <span></span>
             </div>
           </div><!--scroll-->
 
-          <h2 class="other_ttl contents_ttl">
+          <h2 class="other_ttl contents_ttl inview_re fadeIn">
             他のじまんのお菓子
           </h2>
 
           <div class="contents_block">
-            <ul class="other_list">
+            <ul class="other_list inview_re fadeIn">
               <li>
                 <a href="#">
                   <img src="../ankodo/imges/home_img10.png" class="other_img">
@@ -379,14 +389,14 @@
       <!--INFORMATION-->
       <section id="information" class="contents_section">
         <div class="contents_section_inner">
-          <div class="scroll">
+          <div class="scroll inview_re fadeIn">
             <div class="scroll_line">
               <span></span>
             </div>
           </div><!--scroll-->
 
           <div class="contents_block">
-            <ul class="info_list">
+            <ul class="info_list inview_re fadeIn">
               <li>
                 <a href="">
                   <div class="info_img">
@@ -444,7 +454,7 @@
       </section>
 
       <!--NEWS-->
-      <section id="news" class="contents_section">
+      <section id="news" class="contents_section inview_re fadeIn">
         <div class="contents_section_inner">
           <h2 class="news_ttl en1 kerning">
             Instagram
@@ -491,12 +501,12 @@
           </div><!--contents_block-->
         </div><!--contents_section_inner-->
       </section>
-      
+
 
       <!--FOOTER-->
       <footer>
         <div class="footer_inner">
-          <div class="footer_block">
+          <div class="footer_block inview_re fadeIn">
             <div class="footer_onlineshop">
               <a href="#">
                 <div class="footer_online_img">
@@ -553,9 +563,18 @@
       </footer>
 
 
-    </div><!--contents-->
+
+
+
+      </div><!--contents-->
+    </div><!--wrap_inner-->
   </div><!--wrapper-->
 
+
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  <script src="js/jquery.inview.min.js"></script>
 
 </body>
 </html>
