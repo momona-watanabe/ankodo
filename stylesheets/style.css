@@ -241,12 +241,14 @@ header {
   margin: 0 auto;
 }
 
+
 .recommend_list {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 180px;
 }
+
 
 .recommend_img, .recommend_txt {
   width: 50%;
@@ -277,6 +279,8 @@ header {
   max-width: 300px;
   margin: 0 auto;
 }
+
+
 
 .recommend_list:nth-child(1) {
   margin-top: 100px;
@@ -347,6 +351,7 @@ header {
 
 
 
+
 /*information*/
 
 .info_list {
@@ -380,6 +385,8 @@ header {
 .info_img img {
   border-radius: 50%;
 }
+/*
+
 
 
 
@@ -417,6 +424,9 @@ header {
 #news {
   padding-bottom: 80px;
 }
+
+
+
 
 
 
@@ -553,6 +563,12 @@ footer {
 
 
 
+
+
+
+
+
+
 /* レスポンシブ 
 ----------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------- */
@@ -592,6 +608,7 @@ footer {
   margin: 60px 0 0;
   width: 100%;
 }
+
 
 #news {
   padding-left: 30px;
@@ -662,7 +679,6 @@ footer {
 .contact_inner {
   justify-content: center;
 }
-
 }/*max-width:999px*/
 
 
@@ -671,8 +687,7 @@ footer {
 
 
 @media screen and (max-width:559px) {
-
-
+  
 .firstview_copy {
   margin: 15px 0px 0px -90px;
 }
@@ -733,6 +748,8 @@ footer {
   line-height: 32px;
   text-align: left;
 }
+
+
 
 .recommend_list {
   display: block;
@@ -868,3 +885,71 @@ footer {
 }
 
 }/*max-width:559px*/
+
+
+
+
+
+
+
+/* アニメーション 
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------ */
+
+/*ローディング*/
+#loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: rgb(255,251,242);
+  position: fixed;
+  z-index: 99999;
+}
+
+.load_inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.load_logo {
+  position: absolute;
+  width: 80px;
+  top: 50%;
+  left: 50%;
+  margin: -40px 0 0 -40px;
+}
+
+.wrap_inner {
+  opacity: 0;
+}
+
+/*bodyにappearクラスがついたら出現*/
+body.appear .wrap_inner{
+  animation-name:PageAnimeAppear;
+  animation-duration:.5s;
+  animation-delay: .5s;
+  animation-fill-mode:forwards;
+  opacity: 0;
+}
+
+@keyframes PageAnimeAppear{
+  0% {
+  opacity: 0;
+  }
+  100% {
+  opacity: 1;
+}
+}
+
+
+
+
+/*inview js*/
+.fadeIn {
+  opacity: 0;
+  transition: 1.4s;
+}
+.fadeIn.is-show {
+  opacity: 1;
+}
