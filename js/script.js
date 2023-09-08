@@ -1,16 +1,12 @@
 
 
 
-
 //loadingアニメーション
 $(window).on('load',function(){
-
-  //=====ここからローディングエリア（splashエリア）を1.5秒でフェードアウトした後に動かしたいJSをまとめる
-  $("#loading").delay(1500).fadeOut('slow',function(){//ローディングエリア（splashエリア）を1.5秒でフェードアウトする記述
+  $("#loading").delay(1500).fadeOut('slow',function(){
     $('body').addClass('appear'); //フェードアウト後bodyにappearクラス付与
   });
 });
-
 
 
 
