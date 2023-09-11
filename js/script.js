@@ -10,6 +10,7 @@ $(".openbtn").click(function(){
 
 
 
+
 //Menu hover_line
 $('.menu_list a').hover (
   function(){
@@ -20,7 +21,7 @@ $('.menu_list a').hover (
   },
 );
 
-
+//link_more hover_line
 $('.link_more').hover (
   function(){
     $(this).find('span').addClass('active')
@@ -29,6 +30,50 @@ $('.link_more').hover (
     $(this).find('span').removeClass('active');
   },
 );
+
+
+
+
+
+
+function sclollAnime1(){
+
+  $('.scroll_line').each(function(){ 
+    var elemPos = $(this).offset().top-10;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight){
+    $(this).find('span').addClass('active');
+    }else{
+    $(this).find('span').removeClass('active');
+    }
+    });
+}
+
+  $(window).scroll(function (){
+    sclollAnime1();
+  });
+
+
+
+function sclollAnime2(){
+
+  $('.link_more').each(function(){ 
+    var elemPos = $(this).offset().top-50;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight){
+    $(this).find('span').addClass('active');
+    }else{
+    $(this).find('span').removeClass('active');
+    }
+    });
+}
+
+  $(window).scroll(function (){
+    sclollAnime2();
+  });
+
 
 
 
