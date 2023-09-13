@@ -11,6 +11,26 @@ $(".openbtn").click(function(){
 
 
 
+$('.slider').slick({
+  autoplay: true,
+  infinite: true,
+  speed: 800,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  prevArrow: '<div class="slick-prev"></div>',
+  nextArrow: '<div class="slick-next"></div>',
+  centerMode: true,
+  variableWidth: true,
+  dots: false,
+  pauseOnFocus: false,
+  pauseOnHover: false,
+});
+
+
+
+
+
+
 //Menu hover_line
 $('.menu_list a').hover (
   function(){
