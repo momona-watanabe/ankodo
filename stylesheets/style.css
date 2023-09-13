@@ -94,6 +94,8 @@ a {
 }
 
 
+
+
 /*firsview*/
 #firstview {
   height: 800px;
@@ -124,17 +126,14 @@ a {
   top: 50%;
 }
 
-.slide_list {
-  display: flex;
-}
-.slide_list li {
-  width: 160px;
-  transition: all 0.5s;
-}
-.slide_list li:hover {
+
+/*
+.slider li:hover {
   transform: rotate(10deg);
   transition: all 0.5s;
-}
+}*/
+
+
 
 .firstview_scroll {
   text-align: center;
@@ -150,6 +149,28 @@ a {
   font-size: 13px;
   font-weight: 500;
   letter-spacing: -3px;
+}
+
+
+
+.slider {
+  display: flex;
+  width:100%;
+  margin:0 auto;
+}
+
+.slider li {
+  width: 280px;;
+  height:auto;
+}
+
+.slider .slick-slide {
+transform: scale(0.58);
+transition: all .5s;
+}
+
+.slider .slick-slide.slick-center{
+transform: scale(1);
 }
 
 
