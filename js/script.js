@@ -10,20 +10,20 @@ $(".openbtn").click(function(){
 
 
 
-
 $('.slider').slick({
   autoplay: true,
   infinite: true,
-  speed: 800,
+  speed: 3000,
   slidesToShow: 5,
-  slidesToScroll: 1,
-  prevArrow: '<div class="slick-prev"></div>',
-  nextArrow: '<div class="slick-next"></div>',
   centerMode: true,
   variableWidth: true,
   dots: false,
   pauseOnFocus: false,
   pauseOnHover: false,
+  arrows: false,
+  draggable: false,
+  swipe: false,
+  touchMove: false,
 });
 
 
