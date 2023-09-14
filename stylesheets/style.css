@@ -118,22 +118,11 @@ a {
   writing-mode: vertical-rl;
 }
 
-
-/*slide時 width:250%;*/
 .firstview_slide {
   width: 100%;
   position: absolute;
   top: 50%;
 }
-
-
-/*
-.slider li:hover {
-  transform: rotate(10deg);
-  transition: all 0.5s;
-}*/
-
-
 
 .firstview_scroll {
   text-align: center;
@@ -160,19 +149,25 @@ a {
 }
 
 .slider li {
-  width: 280px;;
+  width: 280px;
   height:auto;
+  margin: 0px 55px;
+  transition: all 1s;
 }
 
 .slider .slick-slide {
-transform: scale(0.58);
-transition: all .5s;
+width: 160px;
 }
 
 .slider .slick-slide.slick-center{
-transform: scale(1);
+width: 260px;
 }
 
+.slick-track {
+  display: flex;
+  align-items: center;
+  height: 350px;
+}
 
 
 
@@ -1536,4 +1531,47 @@ body.appear .wrap_inner{
     top: 100%;
     transform: translateY(-100%);
   }
+}
+
+
+
+
+
+/*slide_rotate*/
+.slider li {
+  animation: slide_rotate 4s ease-in-out infinite;
+  animation-fill-mode: backwards;
+  animation-delay: 1s;
+}
+
+@keyframes slide_rotate {
+  0%,100% {
+    transform: rotate(0);
+    transform-origin: left bottom
+}
+
+22% {
+    transform: rotate(7.5deg);
+    transform-origin: right bottom
+}
+
+44% {
+    transform: rotate(-7.5deg);
+    transform-origin: left bottom
+}
+
+66% {
+    transform: rotate(3.75deg);
+    transform-origin: right bottom
+}
+
+77% {
+    transform: rotate(-1.875deg);
+    transform-origin: left bottom
+}
+
+88% {
+    transform: rotate(.9375deg);
+    transform-origin: right bottom
+}
 }
