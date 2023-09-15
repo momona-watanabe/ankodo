@@ -13,7 +13,7 @@ $(".openbtn").click(function(){
 $('.slider').slick({
   autoplay: true,
   infinite: true,
-  speed: 3000,
+  speed: 2500,
   slidesToShow: 5,
   centerMode: true,
   variableWidth: true,
@@ -95,6 +95,45 @@ function sclollAnime2(){
   });
 
 
+function sclollAnime3(){
+
+  $('.recommend_img').each(function(){ 
+    var elemPos = $(this).offset().top-50;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight){
+    $(this).find('img').addClass('active');
+    }else{
+    $(this).find('img').removeClass('active');
+    }
+    });
+}
+
+  $(window).scroll(function (){
+    sclollAnime3();
+  });
+
+
+
+function sclollAnime4(){
+
+  $('.other_list').each(function(){ 
+    var elemPos = $(this).offset().top-50;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight){
+    $(this).find('img').addClass('active');
+    }else{
+    $(this).find('img').removeClass('active');
+    }
+    });
+}
+
+  $(window).scroll(function (){
+    sclollAnime4();
+  });// 
+
+
 
 
 
@@ -102,7 +141,6 @@ function sclollAnime2(){
 //loadingアニメーション
 $(window).on('load',function(){
 
-//フェードアウトした後に動かしたいJSをまとめる
   $("#loading").delay(1500).fadeOut('slow',function(){
     $('body').addClass('appear'); //フェードアウト後bodyにappearクラス付与
   });
