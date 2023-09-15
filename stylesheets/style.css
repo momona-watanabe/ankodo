@@ -75,10 +75,6 @@ a {
 }
 
 
-
-
-
-
 .contents {
   position: relative;
   width: 100%;
@@ -92,8 +88,6 @@ a {
 .contents_block {
   width: 100%;
 }
-
-
 
 
 /*firsview*/
@@ -118,10 +112,12 @@ a {
   writing-mode: vertical-rl;
 }
 
+
+/*slide時 width:250%;*/
 .firstview_slide {
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: 35%;
 }
 
 .firstview_scroll {
@@ -151,16 +147,16 @@ a {
 .slider li {
   width: 280px;
   height:auto;
-  margin: 0px 55px;
+  margin: 0px 50px;
   transition: all 1s;
 }
 
 .slider .slick-slide {
-width: 160px;
+  width: 175px;
 }
 
 .slider .slick-slide.slick-center{
-width: 260px;
+  width: 280px;
 }
 
 .slick-track {
@@ -168,7 +164,6 @@ width: 260px;
   align-items: center;
   height: 350px;
 }
-
 
 
 
@@ -237,7 +232,17 @@ width: 260px;
 .recommend_img img{
   max-width: 300px;
   margin: 0 auto;
+  scale: 0.75;
+  transition: all 1.6s;
+  opacity: 0;
 }
+
+.recommend_img img.active{
+  scale: 1;
+  opacity: 1;
+}
+
+
 
 
 
@@ -279,8 +284,19 @@ width: 260px;
   margin-bottom: 30px;
   margin-top: 15px;
   object-fit: contain;
-  transition: all 0.7s;
 }
+
+.other_img {
+  scale: 0.7;
+  transition: all 1.6s;
+  opacity: 0;
+}
+
+.other_img.active{
+  scale: 1;
+  opacity: 1;
+}
+
 
 .other_img:hover {
   transform: rotate(10deg);
@@ -350,6 +366,7 @@ width: 260px;
 .info_img img {
   border-radius: 50%;
 }
+
 
 
 
@@ -1263,7 +1280,6 @@ body.appear .wrap_inner{
 
 
 /*inview js*/
-
 .fadeIn {
   opacity: 0;
   transition: 1.4s;
@@ -1271,8 +1287,6 @@ body.appear .wrap_inner{
 .fadeIn.is-show {
   opacity: 1;
 }
-
-
 
 
 
@@ -1393,6 +1407,8 @@ body.appear .wrap_inner{
       transform: translateY(0)
   }
 }
+
+
 
 
 
@@ -1574,4 +1590,71 @@ body.appear .wrap_inner{
     transform: rotate(.9375deg);
     transform-origin: right bottom
 }
+}
+
+
+
+
+
+/*letter_fadein*/
+.firstview_copy >h1>span {
+  transition: all 3s;
+}
+
+.letter1 {
+  animation: letter_fadein 1s ease-in-out forwards;
+  animation-delay: 2.4s;
+}
+
+.letter2 {
+  animation: letter_fadein 1s ease-in-out forwards;
+  animation-delay: 2.45s;
+}
+
+.letter3 {
+  animation: letter_fadein 1s ease-in-out forwards;
+  animation-delay: 2.5s;
+}
+
+.letter4 {
+  animation: letter_fadein 1s ease-in-out forwards;
+  animation-delay: 2.55s;
+}
+
+.letter5 {
+  animation: letter_fadein 1s ease-in-out forwards;
+  animation-delay: 2.6s;
+}
+
+.letter6 {
+  animation: letter_fadein 1s ease-in-out forwards;
+  animation-delay: 2.65s;
+}
+
+.letter7 {
+  animation: letter_fadein 1s ease-in-out forwards;
+  animation-delay: 2.7s;
+}
+
+.letter8 {
+  animation: letter_fadein 1s ease-in-out forwards;
+  animation-delay: 2.75s;
+}
+
+.letter9 {
+  animation: letter_fadein 1s ease-in-out forwards;
+  animation-delay: 2.8s;
+}
+
+
+
+@keyframes letter_fadein {
+  
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
 }
