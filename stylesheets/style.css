@@ -56,7 +56,6 @@ a {
   width: 120px;
 }
 
-
 .online_line span{
   margin: 22.5px auto;
   height: 1px;
@@ -74,7 +73,6 @@ a {
   margin-bottom: 50px;
 }
 
-
 .contents {
   position: relative;
   width: 100%;
@@ -88,6 +86,7 @@ a {
 .contents_block {
   width: 100%;
 }
+
 
 
 /*firsview*/
@@ -113,7 +112,6 @@ a {
 }
 
 
-/*slide時 width:250%;*/
 .firstview_slide {
   width: 100%;
   position: absolute;
@@ -137,7 +135,7 @@ a {
 }
 
 
-
+/*slick slider*/
 .slider {
   display: flex;
   width:100%;
@@ -164,6 +162,7 @@ a {
   align-items: center;
   height: 350px;
 }
+
 
 
 
@@ -232,7 +231,7 @@ a {
 .recommend_img img{
   max-width: 300px;
   margin: 0 auto;
-  scale: 0.75;
+  scale: 0.8;
   transition: all 1.6s;
   opacity: 0;
 }
@@ -363,9 +362,10 @@ a {
   font-weight: 400;
 }
 
-.info_img img {
-  border-radius: 50%;
-}
+
+
+
+
 
 
 
@@ -428,14 +428,51 @@ footer {
   text-align: center;
 }
 
+
 .footer_online_img {
   width: 90px;
   margin: 0 auto 25px;
+  transition: all 1s;
 }
 
-.footer_online_img img:nth-child(2) {
-  display: none;
+.footer_online_img {
+  scale: 0.7;
+  transition: all 1.6s;
+  opacity: 0;
 }
+
+.footer_online_img.active{
+  scale: 1;
+  opacity: 1;
+}
+
+/*online_img ホバー時入れ替え*/
+.online_img1 {
+  display: block;
+  transition: all 1.5s;
+  opacity: 1;
+}
+.online_img1.none {
+  display: none;
+  transition: all 1.5s;
+  opacity: 0;
+}
+
+.online_img2.active {
+  display: block;
+  transition: all 1.5s;
+  opacity: 1;
+  height: auto;
+}
+
+.online_img2 {
+  width: 86px;
+  display: block;
+  transition: all 1.5s;
+  opacity: 0;
+  height: 0;
+}
+
 
 .footer_onlineshop a>p:nth-child(2) {
   font-size: 20px;
@@ -450,8 +487,6 @@ footer {
   letter-spacing: 0.5px;
   font-weight: 400;
 }
-
-
 
 .footer_wrap {
   margin-top: 130px;
@@ -494,7 +529,6 @@ footer {
   font-weight: 500;
   letter-spacing: 0.5px;
 }
-
 
 .footer_contact {
   margin-left: 100px;
@@ -557,6 +591,12 @@ footer {
 
 header {
   width: 100%;
+}
+.fix_scroll {
+  position: absolute;
+  height: 60px;
+  bottom: 60px;
+  left: 60px;
 }
 .header_inner {
   width: 100%;
@@ -963,54 +1003,66 @@ footer {
 @media screen and (max-width:590px) {
 
 .scroll {
-  margin: 30px 0 60px 0;
+  margin: 28px 0 60px 0;
+}
+
+.fix_scroll {
+  left: 30px;
+  bottom: 30px;
 }
 
 .menu_block {
-  padding: 150px 30px 220px;
+  padding: 140px 30px 220px;
 }
 
 .menu_logo {
   width: 60px;
-  bottom: 190px;
+  bottom: 210px;
   right: 30px;
   margin: 0;
 }
 
 .menu_tel {
-  bottom: 145px;
+  bottom: 165px;
   right: 30px;
   margin: 0;
+  font-size: 18px;
+  line-height: 18px;
 }
 
 .menu_online {
-  bottom: 82px;
+  bottom: 100px;
   right: 120px;
   margin: 0;
 }
 
 .menu_sns {
-  bottom: 90px;
+  bottom: 108px;
   right: 30px;
   margin: 0;
 }
 
+.menu_list {
+  margin: 30px 0 0;
+}
+
 .menu_list:nth-child(3) {
   max-width: 300px;
+  margin-top: 5px;
 }
 
 .menu_list >a {
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 17px;
+  line-height: 17px;
 }
 
 .menu_list:nth-child(3) a {
-  margin-top: 20px;
+  margin-top: 18px;
   font-size: 16px;
 }
 
 .menu_list:nth-child(3) >p {
-  margin-top: 18px;
+  margin-top: 16px;
 }
 
 .menu_list:nth-child(3) >p:nth-child(4) {
@@ -1030,7 +1082,43 @@ footer {
   bottom: 20px;
 }
 
+
+
+
+.slider li {
+  width: 280px;
+  height:auto;
+  margin: 0px 15px;
+  transition: all 1s;
+}
+
+.slider .slick-slide {
+  width: 130px;
+}
+
+.slider .slick-slide.slick-center{
+  width: 210px;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+  height: 350px;
+}
+
+
+.header_ttl.active {
+  display: block;
+}
+
 .header_ttl {
+  top: 30px;
+  right: auto;
+  left: 30px;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.3px;
+  writing-mode: unset;
   display: none;
 }
 
@@ -1312,7 +1400,15 @@ body.appear .wrap_inner{
   display: block;
 }
 
+.online_line {
+  width: 30px;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
+.online_line span.active {
+  animation: hover_line_on 1s ease-in-out forwards;
+}
 
 
 /*　Menu text　hover　*/
@@ -1516,13 +1612,6 @@ body.appear .wrap_inner{
   position: relative;
 }
 
-.fix_scroll {
-  position: absolute;
-  height: 60px;
-  bottom: 60px;
-  left: 60px;
-}
-
 .fix_scroll>div {
   width: 6px;
   height: 6px;
@@ -1646,8 +1735,6 @@ body.appear .wrap_inner{
   animation-delay: 2.8s;
 }
 
-
-
 @keyframes letter_fadein {
   
   0% {
@@ -1658,3 +1745,66 @@ body.appear .wrap_inner{
       opacity: 1;
   }
 }
+
+
+
+
+
+/*スクロール時・ホバー時アニメーション*/
+.info_img img {
+  border-radius: 20%;
+  transform: scale(1.1);
+	transition: .7s ease-in-out;
+}
+
+.info_img img.active{
+  animation: big .7s ease-in-out forwards;
+}
+
+.info_img img.small{
+	transform: scale(1);
+  transition: 1s ease-in-out;
+}
+
+.info_img span{
+  display: block;
+  line-height: 0;
+  overflow: hidden;
+  border-radius: 20%;
+}
+
+.info_img span.active{
+  border-radius: 50%;
+  transition: 1s ease-in-out;
+}
+
+
+
+.news_img img {
+  transform: scale(1.05);
+  transition: .7s ease-in-out;
+}
+
+.news_img img.active{
+  animation: big .7s ease-in-out forwards;
+}
+
+@keyframes big {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.news_img img.small{
+	transform: scale(1);
+}
+
+.news_img span{
+  display: block;
+  line-height: 0;
+  overflow: hidden;
+}
+
