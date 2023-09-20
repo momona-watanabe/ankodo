@@ -56,6 +56,7 @@ a {
   width: 120px;
 }
 
+
 .online_line span{
   margin: 22.5px auto;
   height: 1px;
@@ -73,6 +74,11 @@ a {
   margin-bottom: 50px;
 }
 
+
+
+
+
+
 .contents {
   position: relative;
   width: 100%;
@@ -86,7 +92,6 @@ a {
 .contents_block {
   width: 100%;
 }
-
 
 
 /*firsview*/
@@ -116,6 +121,7 @@ a {
   width: 100%;
   position: absolute;
   top: 35%;
+  z-index: 100;
 }
 
 .firstview_scroll {
@@ -135,7 +141,7 @@ a {
 }
 
 
-/*slick slider*/
+
 .slider {
   display: flex;
   width:100%;
@@ -145,16 +151,16 @@ a {
 .slider li {
   width: 280px;
   height:auto;
-  margin: 0px 50px;
+  margin: 0px 15px;
   transition: all 1s;
 }
 
 .slider .slick-slide {
-  width: 175px;
+  padding: 55px;
 }
 
 .slider .slick-slide.slick-center{
-  width: 280px;
+  padding: 0;
 }
 
 .slick-track {
@@ -162,6 +168,16 @@ a {
   align-items: center;
   height: 350px;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -737,7 +753,7 @@ header {
 .menu_list:nth-child(3) {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 25px;
+  margin-top: 5px;
 }
 .menu_list:nth-child(3) a{
   margin-top: 25px;
@@ -1088,16 +1104,16 @@ footer {
 .slider li {
   width: 280px;
   height:auto;
-  margin: 0px 15px;
   transition: all 1s;
 }
 
 .slider .slick-slide {
-  width: 130px;
+  padding: 75px;
+  margin: -40px;
 }
 
 .slider .slick-slide.slick-center{
-  width: 210px;
+  padding: 30px;
 }
 
 .slick-track {
@@ -1512,35 +1528,38 @@ body.appear .wrap_inner{
 
 
 /*スクロール回転*/
-.firstview_scroll {
-  animation: rotation_3d 2.3s linear infinite;
+.firstview_scroll p span:nth-child(1){
+  animation: rotation 2.5s ease-in-out 1.5s infinite;
+}
+.firstview_scroll p span:nth-child(2){
+  animation: rotation 2.5s ease-in-out 1.55s infinite;
+}
+.firstview_scroll p span:nth-child(3){
+  animation: rotation 2.5s ease-in-out 1.6s infinite;
+}
+.firstview_scroll p span:nth-child(4){
+  animation: rotation 2.5s ease-in-out 1.65s infinite;
+}
+.firstview_scroll p span:nth-child(5){
+  animation: rotation 2.5s ease-in-out 1.7s infinite;
 }
 
-@keyframes rotation_3d {
-  0% {
-    transform: rotate3d(0,0,0,0deg);
+
+@keyframes rotation {
+
+  0%, 100%, 50% {
+    transform: translateY(0) rotateX(0);
     opacity: 1;
   }
 
-  49% {
-    transform: rotate3d(1,0,0,180deg);
+  23% {
+    transform: translateY(50%) rotateX(-90deg);
     opacity: 0;
   }
-  49.5% {
-    transform: rotate3d(1,0,0,180deg);
+
+  27% {
+    transform: translateY(-50%) rotateX(90deg);
     opacity: 0;
-  }
-  50.5% {
-    transform: rotate3d(1,0,0,180deg);
-    opacity: 0;
-  }
-  51% {
-    transform: rotate3d(1,0,0,180deg);
-    opacity: 1;
-  }
-  100% {
-    transform: rotate3d(1,0,0,360deg);
-    opacity: 1;
   }
 }
 
@@ -1550,51 +1569,46 @@ body.appear .wrap_inner{
 
 /*openbtn_anime*/
 .openbtn>div:nth-of-type(1)>span {
-  animation: openbtn_anime 2s ease-in-out 1.5s infinite;
+  animation: openbtn_anime 2.5s ease-in-out 1.5s infinite;
   animation-delay: 1.5s;
-  
 }
 .openbtn>div:nth-of-type(2)>span {
-  animation: openbtn_anime 2s ease-in-out 1.5s infinite;
+  animation: openbtn_anime 2.5s ease-in-out 1.5s infinite;
   animation-delay: 1.625s;
 }
 .openbtn>div:nth-of-type(3)>span {
-  animation: openbtn_anime 2s ease-in-out 1.5s infinite;
+  animation: openbtn_anime 2.5s ease-in-out 1.5s infinite;
   animation-delay: 1.75s;
 }
 
 @keyframes openbtn_anime {
-0% {
-  opacity: 1;
-  transform: translateX(0)
+
+  0%, 100%, 50% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  23% {
+    transform: translateX(100%);
+    opacity: 1;
 }
 
-49% {
-  opacity: 1;
-  transform: translateX(100%)
-}
-
-49.5% {
+24% {
+  transform: translateX(100%);
   opacity: 0;
-  transform: translateX(100%)
 }
 
-50.5% {
+26% {
+  transform: translateX(-100%);
   opacity: 0;
-  transform: translateX(-100%)
 }
 
-51% {
+27% {
+  transform: translateX(-100%);
   opacity: 1;
-  transform: translateX(-100%)
 }
 
-100% {
-  opacity: 1;
-  transform: translateX(0)
 }
-}
-
 
 
 
@@ -1763,7 +1777,7 @@ body.appear .wrap_inner{
 
 .info_img img.small{
 	transform: scale(1);
-  transition: 1s ease-in-out;
+  transition: .7s ease-in-out;
 }
 
 .info_img span{
