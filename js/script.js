@@ -189,7 +189,7 @@ function sclollAnime5(){
 function sclollAnime6(){
 
   $('.info_list li').each(function(){ 
-    var elemPos = $(this).offset().top-10;
+    var elemPos = $(this).offset().top-100;
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
     if (scroll >= elemPos - windowHeight){
