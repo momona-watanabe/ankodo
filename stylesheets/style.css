@@ -82,7 +82,7 @@ a {
 .contents {
   position: relative;
   width: 100%;
-  z-index: 100;
+  z-index: 1;
 }
 
 .contents_section_inner {
@@ -121,8 +121,7 @@ a {
   width: 100%;
   position: absolute;
   top: 35%;
-  z-index: 100;
-  transform: translateZ(0);
+  z-index: 1;
 }
 
 .firstview_scroll {
@@ -623,7 +622,7 @@ header {
   position: fixed;
   top: 60px;
   left: 60px;
-  z-index: 9999;
+  z-index: 500;
   cursor: pointer;
   width: 30px;
   height: 30px;
@@ -672,7 +671,7 @@ header {
 .cart_icon_w.active {
   display: block;
   position: fixed;
-  z-index: 9999;
+  z-index: 500;
   width: 30px;
   top: 105px;
   left: 60px;
@@ -687,7 +686,7 @@ header {
 
 .header_cart {
   position: fixed;
-  z-index: 9999;
+  z-index: 500;
   width: 30px;
   top: 105px;
   left: 60px;
@@ -695,7 +694,7 @@ header {
 
 .header_ttl {
   position: fixed;
-  z-index: 9999;
+  z-index: 500;
   top: 60px;
   right: 60px;
   font-size: 19px;
@@ -720,7 +719,7 @@ header {
   top: 0;
   left: 0;
   opacity: 0.95;
-  z-index: 999;
+  z-index: 100;
   background-color: rgba(90,70,32,1);
 }
 
@@ -1339,7 +1338,7 @@ footer {
   transition: all 1s;
   background-color: rgb(255,251,242);
   position: fixed;
-  z-index: 99999;
+  z-index: 1000;
 }
 
 .load_inner {
@@ -1427,25 +1426,6 @@ body.appear .wrap_inner{
   animation: hover_line_on 1s ease-in-out forwards;
 }
 
-
-/*　Menu text　hover　*/
-.menu_list a {
-  display: inline-block;
-  overflow: hidden;
-}
-
-.hover_line {
-  border-bottom: 1px solid #fff;
-  opacity: 0;
-  display: block;
-  overflow: hidden;
-}
-
-.hover_line.active {
-  animation: hover_line_on 1s ease-in-out forwards;
-  opacity: 1;
-}
-
 @keyframes hover_line_on {
   0% {
       opacity: 1;
@@ -1477,6 +1457,80 @@ body.appear .wrap_inner{
       transform: translateX(0)
   }
 }
+
+
+
+
+
+
+
+/*　Menu text　hover　*/
+.menu_list a {
+  display: inline-block;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+
+.hover_line {
+  border-bottom: 1px solid #fff;
+  opacity: 1;
+  display: block;
+  overflow: hidden;
+  transform: translateX(-100%);
+  
+}
+
+.menu_list a:hover .hover_line {
+    animation: menu_hover .5s ease-in-out forwards;
+  opacity: 1;
+}
+/*
+.hover_line.active {
+  animation: menu_hover .5s ease-in-out forwards;
+  opacity: 1;
+}
+.hover_line.off {
+  animation: menu_off .5s ease-in-out forwards;
+  opacity: 1;
+}*/
+
+
+@keyframes menu_hover {
+
+  0% {
+    opacity: 1;
+    transform: translateX(-100%)
+}
+
+  100% {
+      opacity: 1;
+      transform: translateX(0%)
+  }
+}
+@keyframes menu_off {
+
+  0% {
+    opacity: 1;
+    transform: translateX(0%)
+}
+
+  100% {
+      opacity: 1;
+      transform: translateX(-100%)
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*scloll_line スクロール時出現*/
@@ -1568,10 +1622,13 @@ body.appear .wrap_inner{
 
 
 
+
+
 /*openbtn_anime*/
 .openbtn>div:nth-of-type(1)>span {
   animation: openbtn_anime 2.5s ease-in-out 1.5s infinite;
   animation-delay: 1.5s;
+  
 }
 .openbtn>div:nth-of-type(2)>span {
   animation: openbtn_anime 2.5s ease-in-out 1.5s infinite;
@@ -1615,12 +1672,13 @@ body.appear .wrap_inner{
 
 
 
+
 /*fix_scroll*/
 .fix {
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 500;
 }
 
 .fix_block {
@@ -1767,25 +1825,25 @@ body.appear .wrap_inner{
 
 /*スクロール時・ホバー時アニメーション*/
 .info_img img {
-  border-radius: 20%;
+  border-radius: 30%;
   transform: scale(1.1);
-	transition: .7s ease-in-out;
+	transition: 1s ease-in-out;
 }
 
 .info_img img.active{
-  animation: big .7s ease-in-out forwards;
+  animation: big 1s ease-in-out forwards;
 }
 
 .info_img img.small{
 	transform: scale(1);
-  transition: .7s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .info_img span{
   display: block;
   line-height: 0;
   overflow: hidden;
-  border-radius: 20%;
+  border-radius: 30%;
 }
 
 .info_img span.active{
@@ -1822,4 +1880,5 @@ body.appear .wrap_inner{
   line-height: 0;
   overflow: hidden;
 }
+
 
