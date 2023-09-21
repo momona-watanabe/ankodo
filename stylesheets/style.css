@@ -731,7 +731,15 @@ header {
 .menu_inner {
   position: relative;
 }
-
+	
+.menu_list a {
+  display: inline-block;
+  overflow: hidden;
+  transition: all 1s;
+  position: relative;
+  z-index: 100;
+}
+	
 .menu_list >a {
   color: #fff;
   font-size: 20px;
@@ -1465,11 +1473,7 @@ body.appear .wrap_inner{
 
 
 /*　Menu text　hover　*/
-.menu_list a {
-  display: inline-block;
-  overflow: hidden;
-  transition: all 1s;
-}
+
 
 
 .hover_line {
