@@ -167,42 +167,25 @@ function sclollAnime4(){
 
 
 
-function sclollAnime5(){
-
-  $('.info_list li').each(function(){ 
-    var elemPos = $(this).offset().top-50;
-    var scroll = $(window).scrollTop();
-    var windowHeight = $(window).height();
-    if (scroll >= elemPos - windowHeight){
-    $(this).find('.info_img img').addClass('small');
-    }else{
-    $(this).find('.info_img img').removeClass('small');
-    }
+  function scrollAnime5() {
+    $('.info_list li').each(function() {
+      var elemPos = $(this).offset().top - 50;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll >= elemPos - windowHeight) {
+        $(this).find('.info_img img').addClass('small');
+        $(this).find('.info_img span').addClass('active');
+      } else {
+        $(this).find('.info_img img').removeClass('small');
+        $(this).find('.info_img span').removeClass('active');
+      }
     });
-}
-
-  $(window).scroll(function (){
-    sclollAnime5();
+  }
+  $(window).scroll(function() {
+    scrollAnime5();
   });
 
 
-function sclollAnime6(){
-
-  $('.info_list li').each(function(){ 
-    var elemPos = $(this).offset().top-100;
-    var scroll = $(window).scrollTop();
-    var windowHeight = $(window).height();
-    if (scroll >= elemPos - windowHeight){
-    $(this).find('.info_img span').addClass('active');
-    }else{
-    $(this).find('.info_img span').removeClass('active');
-    }
-    });
-}
-
-  $(window).scroll(function (){
-    sclollAnime6();
-  });
 
 
 
