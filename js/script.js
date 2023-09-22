@@ -35,7 +35,7 @@ $(document).on('mouseenter', '.menu_list a', function() {
   $(this).find('.hover_line').addClass('line_on'))
 }),
 $(document).on('mouseleave', '.menu_list a', function() {
-  $(this).find('.hover_line').hasClass('line_on') && ($(this).removeClass('line_on'),
+  $(this).find('.hover_line').hasClass('line_on') && ($(this).find('.hover_line').removeClass('line_on'),
   $(this).find('.hover_line').addClass('line_off'))
 });
 
