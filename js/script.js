@@ -30,13 +30,13 @@ $('.slider').slick({
 
 
 //Menu hover_line
-$(document).on("mouseenter", ".menu_list a", function() {
-  0 == $(this).find('.hover_line').hasClass("line_on") && ($(this).find('.hover_line').removeClass("line_off"),
-  $(this).find('.hover_line').addClass("line_on"))
+$(document).on('mouseenter', '.menu_list a', function() {
+  0 == $(this).find('.hover_line').hasClass('line_on') && ($(this).find('.hover_line').removeClass('line_off'),
+  $(this).find('.hover_line').addClass('line_on'))
 }),
-$(document).on("mouseleave", ".menu_list a", function() {
-  $(this).find('.hover_line').hasClass("line_on") && ($(this).removeClass("line_on"),
-  $(this).find('.hover_line').addClass("line_off"))
+$(document).on('mouseleave', '.menu_list a', function() {
+  $(this).find('.hover_line').hasClass('line_on') && ($(this).removeClass('line_on'),
+  $(this).find('.hover_line').addClass('line_off'))
 });
 
 
