@@ -30,14 +30,23 @@ $('.slider').slick({
 
 
 //Menu hover_line
-$('.menu_list a').hover (
-  function(){
-    $(this).find('.hover_line').addClass('active')
-  },
-  function(){
-    $(this).find('.hover_line').removeClass('active');
-  },
-);
+$(document).on("mouseenter", ".menu_list a", function() {
+  0 == $(this).find('.hover_line').hasClass("line_on") && ($(this).find('.hover_line').removeClass("line_off"),
+  $(this).find('.hover_line').addClass("line_on"))
+}),
+$(document).on("mouseleave", ".menu_list a", function() {
+  $(this).find('.hover_line').hasClass("line_on") && ($(this).removeClass("line_on"),
+  $(this).find('.hover_line').addClass("line_off"))
+});
+
+
+
+
+
+
+
+
+
 
 //link_more hover_line
 $('.link_more').hover (
@@ -88,6 +97,9 @@ $('.news_list li').hover (
 
 
 
+
+
+
 function sclollAnime1(){
 
   $('.scroll_line').each(function(){ 
@@ -105,6 +117,7 @@ function sclollAnime1(){
   $(window).scroll(function (){
     sclollAnime1();
   });
+
 
 
 function sclollAnime2(){
@@ -187,9 +200,7 @@ function sclollAnime4(){
 
 
 
-
-
-function sclollAnime7(){
+function sclollAnime6(){
 
   $('.news_list li').each(function(){ 
     var elemPos = $(this).offset().top-10;
@@ -204,12 +215,12 @@ function sclollAnime7(){
 }
 
   $(window).scroll(function (){
-    sclollAnime7();
+    sclollAnime6();
   });
 
 
 
-  function sclollAnime8(){
+  function sclollAnime7(){
 
     $('.footer_onlineshop').each(function(){ 
       var elemPos = $(this).offset().top-50;
@@ -221,11 +232,16 @@ function sclollAnime7(){
       $(this).find('.footer_online_img').removeClass('active');
       }
       });
-  }
+    }
   
     $(window).scroll(function (){
-      sclollAnime8();
+      sclollAnime7();
     });
+
+
+
+
+
 
 
 
@@ -233,7 +249,8 @@ function sclollAnime7(){
 
 //loadingアニメーション
 $(window).on('load',function(){
-  
+
+//フェードアウトした後に動かしたいJSをまとめる
   $("#loading").delay(1500).fadeOut('slow',function(){
     $('body').addClass('appear'); //フェードアウト後bodyにappearクラス付与
   });
