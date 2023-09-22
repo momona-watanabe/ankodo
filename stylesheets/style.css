@@ -712,7 +712,6 @@ header {
   top: 50%;
   left: 50%;
   margin: -200px 0 0 -400px;
-  z-index: 100;
 }
 .menu {
   display: none;
@@ -732,15 +731,7 @@ header {
 .menu_inner {
   position: relative;
 }
-	
-.menu_list a {
-  display: inline-block;
-  overflow: hidden;
-  transition: all 1s;
-  position: relative;
-  z-index: 100;
-}
-	
+
 .menu_list >a {
   color: #fff;
   font-size: 20px;
@@ -1474,8 +1465,11 @@ body.appear .wrap_inner{
 
 
 /*　Menu text　hover　*/
-
-
+.menu_list a {
+  display: inline-block;
+  overflow: hidden;
+  transition: all 1s;
+}
 
 .hover_line {
   border-bottom: 1px solid #fff;
@@ -1486,50 +1480,35 @@ body.appear .wrap_inner{
   
 }
 
-.menu_list a:hover .hover_line {
-    animation: menu_hover .5s ease-in-out forwards;
+.hover_line.line_on {
+    animation: hover_line_on1 .5s ease-in-out forwards;
   opacity: 1;
 }
-/*
-.hover_line.active {
-  animation: menu_hover .5s ease-in-out forwards;
+.hover_line.line_off {
+    animation: hover_line_off1 .5s ease-in-out forwards;
   opacity: 1;
 }
-.hover_line.off {
-  animation: menu_off .5s ease-in-out forwards;
-  opacity: 1;
-}*/
 
-
-@keyframes menu_hover {
+@keyframes hover_line_on1 {
 
   0% {
-    opacity: 1;
     transform: translateX(-100%)
-}
+  }
 
   100% {
-      opacity: 1;
       transform: translateX(0%)
   }
 }
-@keyframes menu_off {
+@keyframes hover_line_off1 {
 
   0% {
-    opacity: 1;
     transform: translateX(0%)
-}
+  }
 
   100% {
-      opacity: 1;
-      transform: translateX(-100%)
+      transform: translateX(100%)
   }
 }
-
-
-
-
-
 
 
 
@@ -1839,10 +1818,6 @@ body.appear .wrap_inner{
   animation: big 1s ease-in-out forwards;
 }
 
-.info_img img.small{
-	transform: scale(1);
-  transition: 1s ease-in-out;
-}
 
 .info_img span{
   display: block;
@@ -1877,7 +1852,7 @@ body.appear .wrap_inner{
 }
 
 .news_img img.small{
-	transform: scale(1);
+  transform: scale(1);
 }
 
 .news_img span{
@@ -1885,5 +1860,6 @@ body.appear .wrap_inner{
   line-height: 0;
   overflow: hidden;
 }
+
 
 
