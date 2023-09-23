@@ -1594,10 +1594,9 @@ body.appear .wrap_inner{
 
 
 
-
+/*スクロール回転*/
 .firstview_scroll p span:nth-child(1){
   animation: rotation 2.5s ease-in-out 1.5s infinite;
-  
 }
 .firstview_scroll p span:nth-child(2){
   animation: rotation 2.5s ease-in-out 1.55s infinite;
@@ -1612,7 +1611,7 @@ body.appear .wrap_inner{
   animation: rotation 2.5s ease-in-out 1.7s infinite;
 }
 
-
+/*
 @keyframes rotation {
 
   0%, 100%, 50% {
@@ -1629,9 +1628,25 @@ body.appear .wrap_inner{
     transform: translateY(-50%) translateZ(0) rotateX(90deg);
     opacity: 0;
   }
+}*/
+
+@keyframes rotation {
+
+  0%, 100%, 50% {
+    transform: rotate3d(0);
+    opacity: 1;
+  }
+
+  23% {
+    transform: rotate3d(1,0,0,90deg);
+    opacity: 0;
+  }
+
+  27% {
+    transform: rotate3d(1,0,0,90deg);
+    opacity: 0;
+  }
 }
-
-
 
 
 
