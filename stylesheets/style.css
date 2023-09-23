@@ -1764,7 +1764,7 @@ body.appear .wrap_inner{
   animation-fill-mode: backwards;
   animation-delay: 1s;
 }
-
+/*
 @keyframes slide_rotate {
   0%,100% {
     transform: rotateZ(0);
@@ -1801,7 +1801,7 @@ body.appear .wrap_inner{
     transform: rotate(.9375deg);
     transform-origin: right bottom
 }
-}
+}*/
 
 
 
