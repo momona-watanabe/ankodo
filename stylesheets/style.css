@@ -1597,6 +1597,7 @@ body.appear .wrap_inner{
 /*スクロール回転*/
 .firstview_scroll p span:nth-child(1){
   animation: rotation 2.5s ease-in-out 1.5s infinite;
+  
 }
 .firstview_scroll p span:nth-child(2){
   animation: rotation 2.5s ease-in-out 1.55s infinite;
@@ -1615,17 +1616,17 @@ body.appear .wrap_inner{
 @keyframes rotation {
 
   0%, 100%, 50% {
-    transform: translateY(0) rotateX(0);
+    transform: translateY(0) translateZ(0) rotateX(0);
     opacity: 1;
   }
 
   23% {
-    transform: translateY(50%) rotateX(-90deg);
+    transform: translateY(50%) translateZ(0) rotateX(-90deg);
     opacity: 0;
   }
 
   27% {
-    transform: translateY(-50%) rotateX(90deg);
+    transform: translateY(-50%) translateZ(0) rotateX(90deg);
     opacity: 0;
   }
 }
