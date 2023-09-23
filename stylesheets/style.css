@@ -1812,12 +1812,12 @@ body.appear .wrap_inner{
 
 .letter8 {
   animation: letter_fadein 1.5s ease-in-out forwards;
-  animation-delay: 2.75s;
+  animation-delay: 2.73s;
 }
 
 .letter9 {
   animation: letter_fadein 1.5s ease-in-out forwards;
-  animation-delay: 2.8s;
+  animation-delay: 2.76s;
 }
 
 @keyframes letter_fadein {
