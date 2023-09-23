@@ -98,7 +98,6 @@ a {
 #firstview {
   height: 800px;
   position: relative;
-  z-index:1;
 }
 
 .firstview_copy {
@@ -1597,70 +1596,38 @@ body.appear .wrap_inner{
 
 /*スクロール回転*/
 .firstview_scroll p span:nth-child(1){
-  animation: rotation 2.5s ease-in-out 1.5s infinite;
+  animation: rotation 2.5s ease-in-out 1.45s infinite;
 }
 .firstview_scroll p span:nth-child(2){
-  animation: rotation 2.5s ease-in-out 1.55s infinite;
+  animation: rotation 2.5s ease-in-out 1.5s infinite;
 }
 .firstview_scroll p span:nth-child(3){
-  animation: rotation 2.5s ease-in-out 1.6s infinite;
+  animation: rotation 2.5s ease-in-out 1.55s infinite;
 }
 .firstview_scroll p span:nth-child(4){
-  animation: rotation 2.5s ease-in-out 1.65s infinite;
+  animation: rotation 2.5s ease-in-out 1.6s infinite;
 }
 .firstview_scroll p span:nth-child(5){
-  animation: rotation 2.5s ease-in-out 1.7s infinite;
+  animation: rotation 2.5s ease-in-out 1.65s infinite;
 }
-
-/*
-@keyframes rotation {
-
-  0%, 100%, 50% {
-    transform: translateY(0) translateZ(0) rotateX(0);
-    opacity: 1;
-  }
-
-  23% {
-    transform: translateY(50%) translateZ(0) rotateX(-90deg);
-    opacity: 0;
-  }
-
-  27% {
-    transform: translateY(-50%) translateZ(0) rotateX(90deg);
-    opacity: 0;
-  }
-}*/
 
 @keyframes rotation {
 
   0%, 100%, 50% {
-    transform: rotate3d(0);
+    transform: rotate3d(0,0,0,0);
     opacity: 1;
   }
 
   23% {
-    transform: rotate3d(1,0,0,90deg);
+    transform: rotate3d(0.5,0,0,-90deg);
     opacity: 0;
   }
 
   27% {
-    transform: rotate3d(1,0,0,90deg);
+    transform: rotate3d(-0.5,0,0,90deg);
     opacity: 0;
   }
 }
-
-.firstview_scroll {
-  height:30px;
-  z-index:1
-}
-
-
-
-
-
-
-
-
 
 
 
@@ -1767,37 +1734,31 @@ body.appear .wrap_inner{
 
 @keyframes slide_rotate {
   0%,100% {
-    transform: rotateZ(0);
     transform: rotate(0);
     transform-origin: left bottom
 }
 
 22% {
-    transform: rotateZ(0);
     transform: rotate(7.5deg);
     transform-origin: right bottom
 }
 
 44% {
-    transform: rotateZ(0);
     transform: rotate(-7.5deg);
     transform-origin: left bottom
 }
 
 66% {
-    transform: rotateZ(0);
     transform: rotate(3.75deg);
     transform-origin: right bottom
 }
 
 77% {
-    transform: rotateZ(0);
     transform: rotate(-1.875deg);
     transform-origin: left bottom
 }
 
 88% {
-    transform: rotateZ(0);
     transform: rotate(.9375deg);
     transform-origin: right bottom
 }
@@ -1876,7 +1837,7 @@ body.appear .wrap_inner{
 .info_img img {
   border-radius: 30%;
   transform: scale(1);
-  transition: transform .7s ease-in-out;
+	transition: transform .7s ease-in-out;
 }
 .info_list li:hover .info_img img {
   transform: scale(1.05);
@@ -1919,7 +1880,7 @@ body.appear .wrap_inner{
 }
 
 .news_img img.small{
-  transform: scale(1);
+	transform: scale(1);
 }
 
 .news_img span{
@@ -1927,3 +1888,4 @@ body.appear .wrap_inner{
   line-height: 0;
   overflow: hidden;
 }
+
