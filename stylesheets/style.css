@@ -1767,31 +1767,37 @@ body.appear .wrap_inner{
 
 @keyframes slide_rotate {
   0%,100% {
+    transform: rotateZ(0);
     transform: rotate(0);
     transform-origin: left bottom
 }
 
 22% {
+    transform: rotateZ(0);
     transform: rotate(7.5deg);
     transform-origin: right bottom
 }
 
 44% {
+    transform: rotateZ(0);
     transform: rotate(-7.5deg);
     transform-origin: left bottom
 }
 
 66% {
+    transform: rotateZ(0);
     transform: rotate(3.75deg);
     transform-origin: right bottom
 }
 
 77% {
+    transform: rotateZ(0);
     transform: rotate(-1.875deg);
     transform-origin: left bottom
 }
 
 88% {
+    transform: rotateZ(0);
     transform: rotate(.9375deg);
     transform-origin: right bottom
 }
