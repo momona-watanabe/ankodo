@@ -1648,6 +1648,20 @@ body.appear .wrap_inner{
   }
 }
 
+.firstview_scroll {
+  height:30px;
+  z-index:1
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
