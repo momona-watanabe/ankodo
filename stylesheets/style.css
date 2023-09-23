@@ -1368,7 +1368,7 @@ footer {
   top: 50%;
   left: 50%;
   margin: -40px 0 0 -40px;
-  animation: logo_fadeout 2.5s ease-in-out forwards;
+  animation: logo_fadeout 2s ease-in-out forwards;
 }
 
 @keyframes logo_fadeout {
