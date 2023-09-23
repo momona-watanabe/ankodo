@@ -1811,12 +1811,12 @@ body.appear .wrap_inner{
 }
 
 .letter8 {
-  animation: letter_fadein 1.6s ease-in-out forwards;
+  animation: letter_fadein 1.5s ease-in-out forwards;
   animation-delay: 2.75s;
 }
 
 .letter9 {
-  animation: letter_fadein 1.7s ease-in-out forwards;
+  animation: letter_fadein 1.5s ease-in-out forwards;
   animation-delay: 2.8s;
 }
 
@@ -1849,10 +1849,6 @@ body.appear .wrap_inner{
   animation: big 1s ease-in-out forwards;
 }*/
 
-.info_img img.small{
-  transform: scale(1);
-  transition: 1s ease-in-out;
-}
 
 .info_img span{
   display: block;
