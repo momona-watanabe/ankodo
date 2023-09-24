@@ -1596,7 +1596,7 @@ body.appear .wrap_inner{
 
 
 
-
+/*スクロール回転*/
 .firstview_scroll p span:nth-child(1){
   animation: rotation 2.5s ease-in-out 1.45s infinite;
 }
@@ -1630,6 +1630,7 @@ body.appear .wrap_inner{
     opacity: 0;
   }
 }
+
 
 
 
@@ -1847,7 +1848,11 @@ body.appear .wrap_inner{
 .info_img img.active{
   animation: big 1s ease-in-out forwards;
 }*/
-
+/*
+.info_img img.small{
+	transform: scale(1);
+  transition: 1s ease-in-out;
+}*/
 
 .info_img span{
   display: block;
@@ -1860,6 +1865,44 @@ body.appear .wrap_inner{
   border-radius: 50%;
   transition: all .7s ease-in-out;
 }
+
+
+
+
+
+
+
+
+
+
+/*元のコード
+.news_img img {
+  transform: scale(1.05);
+  transition: transform .7s ease-in-out;
+}
+
+.news_img img.active{
+  animation: big .7s ease-in-out both;
+}
+
+@keyframes big {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.news_img img.small{
+	transform: scale(1);
+}
+
+.news_img span{
+  display: block;
+  line-height: 0;
+  overflow: hidden;
+}*/
 
 
 .news_img img {
@@ -1877,13 +1920,12 @@ body.appear .wrap_inner{
   position: absolute;
   top: 0;
   display: block;
-  transform: scale(1.03);
 }
 
 .news_img_small.small {
   animation-name: small_opacity;
   animation-delay: 0s;
-  animation-duration: .9s;
+  animation-duration: 0.9s;
   animation-fill-mode: forwards;
 }
 
