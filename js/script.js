@@ -200,23 +200,24 @@ function sclollAnime4(){
 
 
 
-function sclollAnime6(){
+  function sclollAnime6(){
 
-  $('.news_list li').each(function(){ 
-    var elemPos = $(this).offset().top-10;
-    var scroll = $(window).scrollTop();
-    var windowHeight = $(window).height();
-    if (scroll >= elemPos - windowHeight){
-    $(this).find('.news_img span img').addClass('small');
-    }else{
-    $(this).find('.news_img span img').removeClass('small');
-    }
+    $('.news_list li').each(function(){ 
+      var elemPos = $(this).offset().top-10;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll >= elemPos - windowHeight){
+      $(this).find('.news_img_small').addClass('small');
+      }else{
+      $(this).find('.news_img_small').removeClass('small');
+      }
+      });
+  }
+  
+    $(window).scroll(function (){
+      sclollAnime6();
     });
-}
 
-  $(window).scroll(function (){
-    sclollAnime6();
-  });
 
 
 
