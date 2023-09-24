@@ -1595,7 +1595,7 @@ body.appear .wrap_inner{
 
 
 
-/*
+
 
 .firstview_scroll p span:nth-child(1){
   animation: rotation 2.5s ease-in-out 1.45s infinite;
@@ -1629,8 +1629,7 @@ body.appear .wrap_inner{
     transform: rotate3d(-0.5,0,0,90deg);
     opacity: 0;
   }
-}*/
-
+}
 
 
 
