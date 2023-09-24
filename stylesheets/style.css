@@ -1626,12 +1626,12 @@ body.appear .wrap_inner{
   }
 
   23% {
-    transform: rotate3d(0.5,0,0,-90deg);
+    transform: rotate3d(1,0,0,90deg);
     opacity: 0;
   }
 
   27% {
-    transform: rotate3d(-0.5,0,0,90deg);
+    transform: rotate3d(1,0,0,90deg);
     opacity: 0;
   }
 }
