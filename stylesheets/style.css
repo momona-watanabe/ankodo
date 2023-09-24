@@ -131,6 +131,8 @@ a {
   bottom: 60px;
   width: 90px;
   margin-left: -45px;
+  z-index: 1;
+  height: 30px;
 }
 
 .firstview_scroll p span {
