@@ -1839,20 +1839,11 @@ body.appear .wrap_inner{
 .info_img img {
   border-radius: 30%;
   transform: scale(1);
-	transition: transform .7s ease-in-out;
+  transition: transform .7s ease-in-out;
 }
 .info_list li:hover .info_img img {
   transform: scale(1.05);
 }
-/*
-.info_img img.active{
-  animation: big 1s ease-in-out forwards;
-}*/
-/*
-.info_img img.small{
-	transform: scale(1);
-  transition: 1s ease-in-out;
-}*/
 
 .info_img span{
   display: block;
@@ -1868,21 +1859,13 @@ body.appear .wrap_inner{
 
 
 
-
-
-
-
-
-
-
-/*元のコード
 .news_img img {
   transform: scale(1.05);
   transition: transform .7s ease-in-out;
 }
 
-.news_img img.active{
-  animation: big .7s ease-in-out both;
+.news_list li:hover .news_img img {
+  transform: scale(1.05);
 }
 
 @keyframes big {
@@ -1902,52 +1885,4 @@ body.appear .wrap_inner{
   display: block;
   line-height: 0;
   overflow: hidden;
-}*/
-
-
-.news_img img {
-  transition: transform 1.5s ease-in-out;
 }
-
-.news_img_big {
-  transform: scale(1);
-}
-.news_list li:hover .news_img_big{
-  transform: scale(1.05);
-  transition: all 0.9s;
-}
-.news_img_small {
-  position: absolute;
-  top: 0;
-  display: block;
-}
-
-.news_img_small.small {
-  animation-name: small_opacity;
-  animation-delay: 0s;
-  animation-duration: 0.9s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes small_opacity {
-  0% {
-    opacity: 1;
-    transform: scale(1.03);
-    height: auto;
-}
-
-100% {
-    opacity: 0;
-    transform: scale(1);
-    height: 0;
-    display: none;
-}
-}
-
-.news_img span{
-  display: block;
-  line-height: 0;
-  overflow: hidden;
-  position: relative;
-}
-
