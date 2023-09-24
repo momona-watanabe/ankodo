@@ -98,6 +98,7 @@ a {
 #firstview {
   height: 800px;
   position: relative;
+  z-index: 1;
 }
 
 .firstview_copy {
@@ -140,6 +141,8 @@ a {
   font-size: 13px;
   font-weight: 500;
   letter-spacing: -3px;
+  position: relative;
+  z-index: 1;
 }
 
 
@@ -155,6 +158,8 @@ a {
   height:auto;
   margin: 0px 15px;
   transition: all 1s;
+  position: relative;
+  z-index: 1;
 }
 
 .slider .slick-slide {
@@ -1886,3 +1891,6 @@ body.appear .wrap_inner{
   line-height: 0;
   overflow: hidden;
 }
+
+
+
