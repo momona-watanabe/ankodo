@@ -1876,6 +1876,7 @@ body.appear .wrap_inner{
   position: absolute;
   top: 0;
   display: block;
+  transform: scale(1.03);
 }
 
 .news_img_small.small {
