@@ -472,16 +472,16 @@ footer {
 /*online_img ホバー時入れ替え*/
 .online_img1 {
   transition-property: opacity;
-  transition-duration: .5s;
+  transition-duration: .7s;
   transition-timing-function: ease-in-out;
 }
 .online_img1.none {
-  transition: all 1.5s;
+  transition: all .7s;
   opacity: 0;
 }
 
 .online_img2.active {
-  transition: all 1.5s;
+  transition: all .7s;
   opacity: 1;
   height: auto;
 }
@@ -492,8 +492,8 @@ footer {
   top: 0;
   left: 0;
   opacity: 0;
+  transition: all .7s;
 }
-
 
 
 
