@@ -13,7 +13,7 @@ $(".openbtn").click(function(){
 $('.slider').slick({
   autoplay: true,
   infinite: true,
-  speed: 2500,
+  speed: 1500,
   slidesToShow: 5,
   centerMode: true,
   variableWidth: true,
@@ -24,7 +24,9 @@ $('.slider').slick({
   draggable: false,
   swipe: false,
   touchMove: false,
+  autoplaySpeed:2500,
 });
+
 
 
 
@@ -43,11 +45,6 @@ $(document).on('mouseleave', '.menu_list a', function() {
 
 
 
-
-
-
-
-
 //link_more hover_line
 $('.link_more').hover (
   function(){
@@ -58,15 +55,22 @@ $('.link_more').hover (
   },
 );
 
+
+
+
+
 //online_line hover_line
 $('.footer_onlineshop a').hover (
   function(){
-    $(this).find('.online_line span').addClass('active')
+    $(this).find('span').removeClass('active')
+    $(this).find('.online_line span').removeClass('off')
+    $(this).find('.online_line span').addClass('on')
     $(this).find('.online_img1').addClass('none')
     $(this).find('.online_img2').addClass('active')
   },
   function(){
-    $(this).find('.online_line span').removeClass('active')
+    $(this).find('.online_line span').removeClass('on')
+    $(this).find('.online_line span').addClass('off')
     $(this).find('.online_img1').removeClass('none')
     $(this).find('.online_img2').removeClass('active');
   },
@@ -85,7 +89,6 @@ $('.info_list li').hover (
     $(this).find('.info_img span img').removeClass('active');
   },
 );
-
 
 
 
@@ -120,7 +123,8 @@ function sclollAnime2(){
     if (scroll >= elemPos - windowHeight){
     $(this).find('span').addClass('active');
     }else{
-    $(this).find('span').removeClass('active');
+    $(this).find('span').removeClass('active')
+    $(this).find('span').removeClass('off');
     }
     });
 }
@@ -191,7 +195,6 @@ function sclollAnime4(){
 
 
 
-
 function sclollAnime6(){
 
   $('.news_list li').each(function(){ 
@@ -212,8 +215,6 @@ function sclollAnime6(){
 
 
 
-
-
   function sclollAnime7(){
 
     $('.footer_onlineshop').each(function(){ 
@@ -226,16 +227,11 @@ function sclollAnime6(){
       $(this).find('.footer_online_img').removeClass('active');
       }
       });
-    }
+  }
   
     $(window).scroll(function (){
       sclollAnime7();
     });
-
-
-
-
-
 
 
 
@@ -255,7 +251,6 @@ $(window).on('load',function(){
 
 
 /*Inview js*/
-
 $(function(){
   $(".inview_re").on("inview", function (event, isInView) {
     if (isInView) {
