@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 /*共通*/
 body {
   background-color: rgb(255,251,242);
@@ -38,10 +39,10 @@ a {
   margin: 0 auto;
 }
 
-
 .scroll {
   margin-bottom: 110px;
 }
+
 .scroll_line span{
   width: 1px;
   height: 45px;
@@ -49,13 +50,6 @@ a {
   display: block;
   margin: 0 auto;
 }
-
-.link_more {
-  display: flex;
-  align-items: center;
-  width: 120px;
-}
-
 
 .online_line span{
   margin: 22.5px auto;
@@ -65,19 +59,11 @@ a {
   display: block;
 }
 
-
-.contents_ttl {
-  text-align: center;
-  font-size: 24px;
-  line-height: 48px;
-  font-weight: 400;
-  margin-bottom: 50px;
+.link_more {
+  display: flex;
+  align-items: center;
+  width: 120px;
 }
-
-
-
-
-
 
 .contents {
   position: relative;
@@ -92,6 +78,15 @@ a {
 .contents_block {
   width: 100%;
 }
+
+.contents_ttl {
+  text-align: center;
+  font-size: 24px;
+  line-height: 48px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
 
 
 /*firsview*/
@@ -116,7 +111,6 @@ a {
   line-height: 70px;
   writing-mode: vertical-rl;
 }
-
 
 .firstview_slide {
   width: 100%;
@@ -145,8 +139,7 @@ a {
   z-index: 1;
 }
 
-
-
+/*slick スライダー*/
 .slider {
   display: flex;
   width:100%;
@@ -178,17 +171,6 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*about*/
 #about {
   width: 100%;
@@ -216,7 +198,6 @@ a {
   margin: 0 auto;
 }
 
-
 .recommend_list {
   display: flex;
   justify-content: center;
@@ -224,10 +205,10 @@ a {
   margin-top: 180px;
 }
 
-
 .recommend_img, .recommend_txt {
   width: 50%;
 }
+
 .recommend_txt div {
   text-align: left;
 }
@@ -237,6 +218,7 @@ a {
   line-height: 48px;
   font-weight: 400;
 }
+
 .recommend_txt p {
   font-size: 18px;
   line-height: 42px;
@@ -263,10 +245,6 @@ a {
   scale: 1;
   opacity: 1;
 }
-
-
-
-
 
 .recommend_list:nth-child(1) {
   margin-top: 100px;
@@ -319,7 +297,6 @@ a {
   opacity: 1;
 }
 
-
 .other_img:hover {
   transform: rotate(10deg);
   transition: all 0.7s;
@@ -329,6 +306,7 @@ a {
   height: 90px;
   margin-top: 5px;
 }
+
 .other_img_area2 {
   height: 70px;
   margin-top: 20px;
@@ -340,6 +318,7 @@ a {
   justify-content: center;
   margin-top: 100px;
 }
+
 .other_list li {
   margin: 0 25px;
 }
@@ -353,15 +332,13 @@ a {
 
 
 
-
-
 /*information*/
-
 .info_list {
   display: flex;
   justify-content: center;
   text-align: center;
 }
+
 .info_list li {
   margin: 0 40px;
   width: 250px;
@@ -379,6 +356,7 @@ a {
   font-weight: 400;
   margin-bottom: 15px;
 }
+
 .info_txt p:nth-child(2) {
   font-size: 16px;
   line-height: 32px;
@@ -387,12 +365,7 @@ a {
 
 
 
-
-
-
-
-
-
+/*news*/
 .news_list {
   display: flex;
   justify-content: center;
@@ -429,11 +402,7 @@ a {
 
 
 
-
-
-
 /*footer*/
-
 footer {
   height: 450px;
 }
@@ -450,7 +419,6 @@ footer {
   margin: 0 auto;
   text-align: center;
 }
-
 
 .footer_online_img {
   width: 90px;
@@ -494,23 +462,6 @@ footer {
   opacity: 0;
   transition: all .7s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .footer_onlineshop a>p:nth-child(2) {
   font-size: 20px;
@@ -630,15 +581,18 @@ footer {
 header {
   width: 100%;
 }
+
 .fix_scroll {
   position: absolute;
   height: 60px;
   bottom: 60px;
   left: 60px;
 }
+
 .header_inner {
   width: 100%;
 }
+
 /*ボタン*/
 .openbtn {
   position: fixed;
@@ -650,6 +604,7 @@ header {
   height: 30px;
   overflow: hidden;
 }
+
 .openbtn span {
   display: inline-block;
   transition: all .5s;
@@ -662,9 +617,11 @@ header {
 .openbtn >div:nth-of-type(1)>span {
   top:0px;
 }
+
 .openbtn >div:nth-of-type(2)>span {
   top:10px;
 }
+
 .openbtn >div:nth-of-type(3)>span {
   top:20px;
 }
@@ -675,20 +632,18 @@ header {
   background-color: #fff;
   animation: none;
 }
+
 .openbtn.active >div:nth-of-type(2)>span {
   opacity: 0;
   animation: none;
 }
+
 .openbtn.active >div:nth-of-type(3)>span {
   top:20px;
   transform: translateY(-10px) rotate(45deg);
   background-color: #fff;
   animation: none;
 }
-.menu.active {
-  display: block;
-}
-
 
 .cart_icon_w.active {
   display: block;
@@ -698,6 +653,7 @@ header {
   top: 105px;
   left: 60px;
 }
+
 .header_ttl.active {
   color: #fff;
 }
@@ -735,6 +691,7 @@ header {
   left: 50%;
   margin: -200px 0 0 -400px;
 }
+
 .menu {
   display: none;
   position: fixed;
@@ -743,6 +700,10 @@ header {
   opacity: 0.95;
   z-index: 100;
   background-color: rgba(90,70,32,1);
+}
+
+.menu.active {
+  display: block;
 }
 
 .menu, .menu_inner {
@@ -815,6 +776,7 @@ header {
   line-height: 20px;
   font-weight: 300;
 }
+
 .menu_tel a {
   color: #fff;
 }
@@ -857,10 +819,6 @@ header {
   margin-right: 20px;
 }
 }
-
-
-
-
 
 
 
@@ -1416,8 +1374,6 @@ body.appear .wrap_inner{
 
 
 
-
-
 /*inview js*/
 .fadeIn {
   opacity: 0;
@@ -1431,11 +1387,9 @@ body.appear .wrap_inner{
 
 
 
-
-
 /*link_more　hover*/
 .link_more span.active {
-  animation: hover_line_on 1s ease-in-out forwards;
+  animation: hover_line_on0 1s ease-in-out forwards;
 }
 
 .link_more div {
@@ -1457,11 +1411,79 @@ body.appear .wrap_inner{
   overflow: hidden;
 }
 
-.online_line span.active {
+.online_line span.on {
   animation: hover_line_on 1s ease-in-out forwards;
 }
 
+.online_line span.off {
+  animation: hover_line_off 1s ease-in-out forwards;
+}
+
+@keyframes hover_line_on0 {
+  0% {
+      opacity: 1;
+      transform: translateX(0)
+  }
+
+  49% {
+      opacity: 1;
+      transform: translateX(100%)
+  }
+
+  49.5% {
+      opacity: 0;
+      transform: translateX(100%)
+  }
+
+  50.5% {
+      opacity: 0;
+      transform: translateX(-100%)
+  }
+
+  51% {
+      opacity: 1;
+      transform: translateX(-100%)
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateX(0)
+  }
+}
+
 @keyframes hover_line_on {
+  0% {
+      opacity: 1;
+      transform: translateX(0)
+  }
+
+  49% {
+      opacity: 1;
+      transform: translateX(100%)
+  }
+
+  49.5% {
+      opacity: 0;
+      transform: translateX(100%)
+  }
+
+  50.5% {
+      opacity: 0;
+      transform: translateX(-100%)
+  }
+
+  51% {
+      opacity: 1;
+      transform: translateX(-100%)
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateX(0)
+  }
+}
+
+@keyframes hover_line_off {
   0% {
       opacity: 1;
       transform: translateX(0)
@@ -1497,8 +1519,6 @@ body.appear .wrap_inner{
 
 
 
-
-
 /*　Menu text　hover　*/
 .menu_list a {
   display: inline-block;
@@ -1512,13 +1532,13 @@ body.appear .wrap_inner{
   display: block;
   overflow: hidden;
   transform: translateX(-100%);
-  
 }
 
 .hover_line.line_on {
     animation: hover_line_on1 .5s ease-in-out forwards;
   opacity: 1;
 }
+
 .hover_line.line_off {
     animation: hover_line_off1 .5s ease-in-out forwards;
   opacity: 1;
@@ -1534,6 +1554,7 @@ body.appear .wrap_inner{
       transform: translateX(0%)
   }
 }
+
 @keyframes hover_line_off1 {
 
   0% {
@@ -1544,9 +1565,6 @@ body.appear .wrap_inner{
       transform: translateX(100%)
   }
 }
-
-
-
 
 
 
@@ -1598,9 +1616,6 @@ body.appear .wrap_inner{
 
 
 
-
-
-
 /*スクロール回転*/
 .firstview_scroll p span:nth-child(1){
   animation: rotation 2.5s ease-in-out 1.45s infinite;
@@ -1626,16 +1641,15 @@ body.appear .wrap_inner{
   }
 
   23% {
-    transform: rotate3d(1,0,0,90deg);
+    transform: rotate3d(0.5,0,0,-90deg);
     opacity: 0;
   }
 
   27% {
-    transform: rotate3d(1,0,0,90deg);
+    transform: rotate3d(-0.5,0,0,90deg);
     opacity: 0;
   }
 }
-
 
 
 
@@ -1645,12 +1659,13 @@ body.appear .wrap_inner{
 .openbtn>div:nth-of-type(1)>span {
   animation: openbtn_anime 2.5s ease-in-out 1.5s infinite;
   animation-delay: 1.5s;
-  
 }
+
 .openbtn>div:nth-of-type(2)>span {
   animation: openbtn_anime 2.5s ease-in-out 1.5s infinite;
   animation-delay: 1.625s;
 }
+
 .openbtn>div:nth-of-type(3)>span {
   animation: openbtn_anime 2.5s ease-in-out 1.5s infinite;
   animation-delay: 1.75s;
@@ -1682,9 +1697,7 @@ body.appear .wrap_inner{
   transform: translateX(-100%);
   opacity: 1;
 }
-
 }
-
 
 
 
@@ -1736,7 +1749,7 @@ body.appear .wrap_inner{
 .slider li {
   animation: slide_rotate 4s ease-in-out infinite;
   animation-fill-mode: backwards;
-  animation-delay: 1s;
+  animation-delay: 3s;
 }
 
 @keyframes slide_rotate {
@@ -1745,27 +1758,27 @@ body.appear .wrap_inner{
     transform-origin: left bottom
 }
 
-22% {
+16% {
     transform: rotate(7.5deg);
     transform-origin: right bottom
 }
 
-44% {
+31% {
     transform: rotate(-7.5deg);
     transform-origin: left bottom
 }
 
-66% {
+46% {
     transform: rotate(3.75deg);
     transform-origin: right bottom
 }
 
-77% {
+54% {
     transform: rotate(-1.875deg);
     transform-origin: left bottom
 }
 
-88% {
+62% {
     transform: rotate(.9375deg);
     transform-origin: right bottom
 }
@@ -1844,8 +1857,9 @@ body.appear .wrap_inner{
 .info_img img {
   border-radius: 30%;
   transform: scale(1);
-  transition: transform .7s ease-in-out;
+	transition: transform .7s ease-in-out;
 }
+
 .info_list li:hover .info_img img {
   transform: scale(1.05);
 }
@@ -1861,6 +1875,8 @@ body.appear .wrap_inner{
   border-radius: 50%;
   transition: all .7s ease-in-out;
 }
+
+
 
 
 
@@ -1891,6 +1907,3 @@ body.appear .wrap_inner{
   line-height: 0;
   overflow: hidden;
 }
-
-
-
