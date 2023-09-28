@@ -825,6 +825,10 @@ header {
 
 
 
+
+
+
+
 /* レスポンシブ 
 ----------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------- */
@@ -1065,8 +1069,12 @@ footer {
   width: 40px;
 }
 
+#firstview {
+  height: 700px;
+}
+
 .firstview_copy {
-  margin: 15px 0px 0px -90px;
+  margin: 0px 0px 0px -90px;
 }
 
 .firstview_copy h1 {
@@ -1078,7 +1086,9 @@ footer {
   bottom: 20px;
 }
 
-
+.firstview_slide {
+  top: 30%;
+}
 
 
 .slider li {
@@ -1532,6 +1542,7 @@ body.appear .wrap_inner{
   display: block;
   overflow: hidden;
   transform: translateX(-100%);
+  
 }
 
 .hover_line.line_on {
@@ -1641,12 +1652,12 @@ body.appear .wrap_inner{
   }
 
   23% {
-    transform: rotate3d(0.5,0,0,-90deg);
+    transform: rotate3d(1,0,0,90deg);
     opacity: 0;
   }
 
   27% {
-    transform: rotate3d(-0.5,0,0,90deg);
+    transform: rotate3d(1,0,0,90deg);
     opacity: 0;
   }
 }
@@ -1907,3 +1918,7 @@ body.appear .wrap_inner{
   line-height: 0;
   overflow: hidden;
 }
+
+
+
+
