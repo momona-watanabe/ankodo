@@ -94,6 +94,7 @@ a {
   height: 800px;
   position: relative;
   z-index: 1;
+  transform: translate3d(0,0,0);
 }
 
 .firstview_copy {
@@ -700,6 +701,7 @@ header {
   opacity: 0.95;
   z-index: 100;
   background-color: rgba(90,70,32,1);
+  transform:translate3d(0,0,100px);
 }
 
 .menu.active {
