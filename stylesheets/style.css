@@ -604,6 +604,7 @@ header {
   width: 30px;
   height: 30px;
   overflow: hidden;
+  transform: translate3d(0,0,100px);
 }
 
 .openbtn span {
@@ -701,7 +702,7 @@ header {
   opacity: 0.95;
   z-index: 100;
   background-color: rgba(90,70,32,1);
-  transform:translate3d(0,0,100px);
+  transform: translate3d(0,0,100px);
 }
 
 .menu.active {
@@ -1127,6 +1128,7 @@ footer {
   letter-spacing: 0.3px;
   writing-mode: unset;
   display: none;
+  transform: translate3d(0,0,100px);
 }
 
 .openbtn {
@@ -1145,6 +1147,7 @@ footer {
   top: 25px;
   left: 100%;
   margin: 0 0 0 -118px;
+  transform: translate3d(0,0,100px);
 }
 
 .contents_section {
