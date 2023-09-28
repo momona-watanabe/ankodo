@@ -662,6 +662,7 @@ header {
 
 .cart_icon_w {
   display: none;
+  transform: translate3d(0,0,100px);
 }
 
 .header_cart {
