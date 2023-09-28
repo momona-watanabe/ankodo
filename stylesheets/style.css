@@ -1142,6 +1142,7 @@ footer {
   top: 25px;
   left: 100%;
   margin: 0 0 0 -118px;
+  transform: translateZ(100px);
 }
 .cart_icon_w.active {
   display: block;
