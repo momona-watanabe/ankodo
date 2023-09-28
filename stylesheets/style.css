@@ -1081,10 +1081,11 @@ footer {
   font-size: 28px;
   line-height: 58px;
 }
-
+/*
 .firstview_scroll {
   bottom: 20px;
 }
+*/
 
 .firstview_slide {
   top: 30%;
@@ -1161,6 +1162,7 @@ footer {
 
 #about {
   padding-bottom: 0;
+  padding-top: 0;
 }
 
 .about_ttl p {
